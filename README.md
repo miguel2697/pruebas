@@ -34,6 +34,8 @@ eas build --platform android --profile production
 
 ## Development Guidelines
 
+We work with an hybrid of trunk-based development with forks to ensure a safe environment in case of wanting to develop new experimental features. The non-experimental develop features need to be created on short-lived branches that will be merged back into the main branch frequently (not more than a week).
+
 ### 1. Fork the repo and clone it
 - You may need to configure some environment variables:
 <br/><br/> in `/proof-of-concept/.env`
