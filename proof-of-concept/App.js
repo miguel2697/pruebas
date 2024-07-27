@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import NotificationButton from './src/components/NotificationButton';
+import YeahAnimation from './src/components/YeahAnimation';
 
 export default function App() {
 
@@ -11,6 +12,8 @@ export default function App() {
       <Text>:)</Text>
 
       <NotificationButton />
+
+      <YeahAnimation />
 
       <StatusBar style="auto" />
     </View>
