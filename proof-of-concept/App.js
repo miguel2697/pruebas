@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import NotificationButton from './src/components/NotificationButton';
 import YeahAnimation from './src/components/YeahAnimation';
+import LateralScroll from './src/components/LateralScroll';
 
 export default function App() {
 
@@ -14,6 +15,8 @@ export default function App() {
       <NotificationButton />
 
       <YeahAnimation />
+
+      <LateralScroll />
 
       <StatusBar style="auto" />
     </View>
