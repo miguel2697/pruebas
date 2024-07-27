@@ -88,7 +88,7 @@ git commit -m '<infinitive action> <what has changed> #<number of the issue>'
 - Move the backlog ticket of your issue to "Review"
 - Wait for your PR to be validated
 
-### 6. ¡Merge to main and start again!
+### 6. Merge to main and start again!
 
 ### 7. Remember to clean
 - Close the related issue
