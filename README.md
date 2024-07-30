@@ -1,4 +1,4 @@
-# INSPIRANZA DEV
+# INSPIRANZA DEV :)
 
 ## Installation
 
