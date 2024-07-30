@@ -10,7 +10,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hola Isa y Miguel!!</Text>
-      <Text>:)</Text>
+      <Text>:D</Text>
 
       <NotificationButton />
 
