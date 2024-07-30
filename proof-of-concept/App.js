@@ -9,8 +9,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Hola Isa!</Text>
-      <Text>:)</Text>
+      <Text>Hola Isa y Miguel!!</Text>
+      <Text>:D</Text>
 
       <NotificationButton />
 
