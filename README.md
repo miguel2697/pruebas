@@ -43,7 +43,7 @@ We work with an hybrid of trunk-based development with forks to ensure a safe en
 PROJECT_ID = <expo project id>
 ```
 
-### 2. Create an issue or pick one already created
+### 2. [Create an issue](https://github.com/InspiranzaDEV/pruebas/issues/new) or pick one already created
 
 - The issue description can have a list of checkpoints to complete
 - In the project backlog, move the issue ticket from "TODO" to "In Progress"
@@ -82,10 +82,10 @@ git commit -m '<infinitive action> <what has changed> #<number of the issue>'
 
 ### 5. Create pull request (PR)
 - Give the PR the same name of the related issue. **E.g.** 3-configure-environment
-``` 
+```
 <Number of the issue>-<Name-of-the-issue>
 ```
-- Assing de PR to your self and connect it to the issue 
+- Assing de PR to your self and connect it to the issue
 - Assign reviewers to your PR
 - Move the backlog ticket of your issue to "Review"
 - Wait for your PR to be validated
