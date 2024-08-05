@@ -30,6 +30,9 @@ export default function LateralScroll() {
                     position: "relative",
                 }}
                 horizontal
+                pagingEnabled={true}
+                snapToInterval={stepFormWidth}
+                decelerationRate="fast"
             >
                 <TouchableOpacity
                     style={{
