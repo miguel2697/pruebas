@@ -25,11 +25,9 @@ jobs:
       - name: Run tests
         run: npm run test
         working-directory: proof-of-concept
-      
-      - name: Debug Secrets
-        run: echo "EXPO_TOKEN is set --> ${{ secrets.EXPO_TOKEN }}"
 
       - name: Setup Expo and EAS
+        if: ${{ github.event_name == 'push' }}
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
