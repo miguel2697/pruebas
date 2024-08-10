@@ -25,6 +25,9 @@ jobs:
       - name: Run tests
         run: npm run test
         working-directory: proof-of-concept
+      
+      - name: Debug Secrets
+        run: echo "EXPO_TOKEN is set --> ${{ secrets.EXPO_TOKEN }}"
 
       - name: Setup Expo and EAS
         if: ${{ secrets.EXPO_TOKEN }}
