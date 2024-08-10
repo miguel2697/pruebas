@@ -20,24 +20,20 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: |
-          cd proof-of-concept
-          npm install
+        run: npm install
+        working-directory: proof-of-concept
 
       - name: Run tests
-        run: |
-          cd proof-of-concept
-          npm run test
+        run: npm run test
+        working-directory: proof-of-concept
 
       - name: Setup Expo and EAS
-        if: secrets.EXPO_TOKEN
+        if: secrets.EXPO_TOKEN != ''
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Build App
-        run: |
-          cd proof-of-concept
-          npm install
-          eas build --platform android --profile production --non-interactive --no-wait
+        run: eas build --platform android --profile production --non-interactive --no-wait
+        working-directory: proof-of-concept
