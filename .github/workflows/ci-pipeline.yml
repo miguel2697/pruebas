@@ -13,7 +13,7 @@ jobs:
           node-version: 20
 
       - name: Run tests
-        - run: |
+        run: |
           cd proof-of-concept
           npm i
           npm run test
@@ -23,7 +23,7 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
-          
+
       - name: Build App
         run: |
           cd proof-of-concept
