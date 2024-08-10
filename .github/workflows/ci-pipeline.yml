@@ -34,5 +34,6 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Build App
+        if: ${{ github.event_name == 'push' }}
         run: eas build --platform android --profile production --non-interactive --no-wait
         working-directory: proof-of-concept
