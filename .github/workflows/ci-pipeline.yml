@@ -30,7 +30,7 @@ jobs:
           npm run test
 
       - name: Setup Expo and EAS
-        if: ${{ secrets.EXPO_TOKEN != '' }}
+        if: secrets.EXPO_TOKEN
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
