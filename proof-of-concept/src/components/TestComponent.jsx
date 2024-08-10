@@ -13,7 +13,7 @@ export default function TestComponent() {
                 onPress={() => {
                     setTimeout(() => {
                         setShow(true)
-                    }, Math.floor(Math.random() * 5))
+                    }, Math.floor(Math.random() * 200))
                 }}
             />
             {show && <Text testID="printed-username">{name}</Text>}
