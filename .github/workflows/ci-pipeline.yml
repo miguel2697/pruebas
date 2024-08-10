@@ -12,6 +12,7 @@ jobs:
   build:
     name: Install, run tests, and build app
     runs-on: ubuntu-latest
+    environment: protected-env
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
