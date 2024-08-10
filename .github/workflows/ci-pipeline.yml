@@ -1,0 +1,41 @@
+name: App Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Install, run tests, and build app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: |
+          cd proof-of-concept
+          npm install
+
+      - name: Run tests
+        run: |
+          cd proof-of-concept
+          npm run test
+
+      - name: Setup Expo and EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Build App
+        run: |
+          cd proof-of-concept
+          npm install
+          eas build --platform android --profile production --non-interactive --no-wait
