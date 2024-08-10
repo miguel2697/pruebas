@@ -35,8 +35,5 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
-# tests
-__snapshots__
-
 #build
 android
