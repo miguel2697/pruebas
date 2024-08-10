@@ -1,0 +1,28 @@
+name: App Continuous Integration
+on:
+  push
+
+jobs:
+  build:
+    name: Install and run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run tests
+        - run: |
+          cd proof-of-concept
+          npm i
+          npm run test
+      - name: Setup Expo and EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Build App
+        run: |
+          cd proof-of-concept
+          npm i
+          eas build --platform all --non-interactive --no-wait
