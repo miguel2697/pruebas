@@ -28,4 +28,4 @@ jobs:
         run: |
           cd proof-of-concept
           npm i
-          eas build --platform all --non-interactive --no-wait
+          eas build --platform android --profile production --non-interactive --no-wait
