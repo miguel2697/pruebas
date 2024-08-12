@@ -1,10 +1,11 @@
-import React from 'react'
-import { Alert } from 'react-native'
-import MyButton from './MyButton';
+import MyButton from './MyButton'
+import useNotification from '../hooks/useNotification'
 
 export default function NotificationButton() {
+    const { scheduleNotification } = useNotification()
+
     const handlePress = () => {
-        Alert.alert("Notificación enviada!")
+        scheduleNotification('titulo', 'mensaje notificación', 5)
     }
 
     return (
@@ -13,4 +14,4 @@ export default function NotificationButton() {
             onPress={handlePress}
         />
     )
-};
+}

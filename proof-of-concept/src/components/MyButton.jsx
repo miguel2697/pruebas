@@ -12,9 +12,12 @@ export default function MyButton({ title = 'Iniciar', onPress }) {
 // TODO pasar estilos a tailwind
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#9b59b6',
+        position: 'absolute',
+        bottom: 20,
+        right: 20,
+        backgroundColor: '#FF8942',
         padding: 15,
-        borderRadius: 25,
+        borderRadius: 15,
         alignItems: 'center',
         justifyContent: 'center',
         margin: 10,

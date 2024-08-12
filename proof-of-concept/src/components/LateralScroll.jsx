@@ -39,11 +39,11 @@ export default function LateralScroll() {
                         justifyContent: "center",
                         paddingVertical: 160,
                     }}
-                    onPress={() => showAlert('Hello!')}
+                    onPress={() => showAlert('Relajarte')}
                     activeOpacity={1}
                 >
                     <Text style={{ color: "white", fontSize: 20 }}>
-                        Hello!
+                        Relajarte
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -54,11 +54,11 @@ export default function LateralScroll() {
                         justifyContent: "center",
                         paddingVertical: 160,
                     }}
-                    onPress={() => showAlert('Word 2')}
+                    onPress={() => showAlert('Dormir')}
                     activeOpacity={1}
                 >
                     <Text style={{ color: "white", fontSize: 20 }}>
-                        Word 2
+                        Dormir
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -69,11 +69,11 @@ export default function LateralScroll() {
                         justifyContent: "center",
                         paddingVertical: 160,
                     }}
-                    onPress={() => showAlert('3 image ^^')}
+                    onPress={() => showAlert('Concentrarte')}
                     activeOpacity={1}
                 >
                     <Text style={{ color: "white", fontSize: 20 }}>
-                        3 image ^^
+                        Concentrarte
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity
@@ -84,11 +84,11 @@ export default function LateralScroll() {
                         justifyContent: "center",
                         paddingVertical: 160,
                     }}
-                    onPress={() => showAlert('Last one')}
+                    onPress={() => showAlert('Cuidarte')}
                     activeOpacity={1}
                 >
                     <Text style={{ color: "white", fontSize: 20 }}>
-                        Last one
+                        Cuidarte
                     </Text>
                 </TouchableOpacity>
             </ScrollView>

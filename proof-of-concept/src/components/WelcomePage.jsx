@@ -5,7 +5,6 @@ import MyForm from './MyForm'
 export default function WelcomePage({ onFormSubmit }) {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>¡Bienvenido a Ommente 🧘‍♀️!</Text>
             <MyForm onSubmit={onFormSubmit} />
         </View>
     )
