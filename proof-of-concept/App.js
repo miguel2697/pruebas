@@ -1,26 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import NotificationButton from './src/components/NotificationButton';
-import YeahAnimation from './src/components/YeahAnimation';
-import LateralScroll from './src/components/LateralScroll';
+import React, { useState } from 'react'
+import { StatusBar } from 'expo-status-bar'
+import { StyleSheet, View } from 'react-native'
+import { LateralScroll, NotificationButton, YeahAnimation, WelcomePage } from './src/components/index.js'
 
 export default function App() {
+  const [showAdditionalComponents, setShowAdditionalComponents] = useState(false)
 
+  const handleFormSubmit = () => {
+    setShowAdditionalComponents(true)
+  }
 
   return (
     <View style={styles.container}>
-      <Text>Hola Isa y Miguel!!</Text>
-      <Text>:D</Text>
-
-      <NotificationButton />
-
-      <YeahAnimation />
-
-      <LateralScroll />
-
       <StatusBar style="auto" />
+      {!showAdditionalComponents ? (
+        <WelcomePage onFormSubmit={handleFormSubmit} />
+      ) : (
+        <>
+          <LateralScroll />
+          <NotificationButton />
+          <YeahAnimation />
+        </>
+      )}
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -31,4 +34,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+})

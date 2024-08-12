@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { View, Button, Alert, Platform } from 'react-native';
+import { View, Alert, Platform } from 'react-native';
 import * as Notifications from 'expo-notifications';
 import * as Device from 'expo-device';
 
